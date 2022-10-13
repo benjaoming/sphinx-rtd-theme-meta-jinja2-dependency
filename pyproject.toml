@@ -1,0 +1,23 @@
+[project]
+name = "sphinx-rtd-theme-meta-jinja2-dependency"
+version = "0.0.1"
+description = "This package fixes issues with the Jinja2 dependency caused by a missing upper bound in Sphinx<4.1"
+authors = [
+    {name = "Benjamin Bach", email="benjamin@overtag.dk"},
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+
+keywords = ["packaging", "dependency","]
+
+classifiers = [
+    "Topic :: Software Development"
+]
+
+# Requirements: This is what we need for all the old Sphinx versions,
+# a subsequent release will handle later Sphinx versions with a more
+# relaxed Jinja2 dependency
+dependencies = [
+    "Sphinx<4.1",
+    "Jinja2<3.1",
+]
