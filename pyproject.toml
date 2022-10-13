@@ -1,14 +1,18 @@
+#[build-system]
+#requires = ["setuptools", "setuptools-scm"]
+#build-backend = "setuptools.build_meta"
+
 [project]
-name = "sphinx-rtd-theme-meta-jinja2-dependency"
+name = "sphinx_rtd_theme_meta_jinja2_dependency"
 version = "0.0.1"
 description = "This package fixes issues with the Jinja2 dependency caused by a missing upper bound in Sphinx<4.1"
 authors = [
     {name = "Benjamin Bach", email="benjamin@overtag.dk"},
 ]
-license = {file = "LICENSE.txt"}
+license = {file = "LICENSE"}
 readme = "README.md"
 
-keywords = ["packaging", "dependency","]
+keywords = ["packaging", "dependency",]
 
 classifiers = [
     "Topic :: Software Development"
